@@ -38,7 +38,6 @@
         &__nav {
             display: flex;
             @include second-font;
-            color: white;
             font-weight: 500;
             ul {
                 margin: 0;
@@ -50,6 +49,15 @@
                         margin-left: 50px;
                     }
                     list-style-type: none;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        transition: 0.3s;
+                        &:hover {
+                            color:#C9453B;
+                            
+                        }
+                    }
                 }
             }
             
