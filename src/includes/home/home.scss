@@ -1,3 +1,104 @@
-.pososito {
-    background: green;
+.home {
+    background: url('assets/img/home.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 5;
+
+    }
+
+    .container {
+        height: 100vh;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &-header {
+        margin: 0;
+        padding: 0;
+        padding-top: 42px;
+        display: flex;
+        justify-content: space-between;
+        &__logo {
+            @include logo-font;
+            color: white;
+            text-align: center;
+            flex-shrink: 1;
+        }
+        &__nav {
+            display: flex;
+            @include second-font;
+            color: white;
+            font-weight: 500;
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                li {
+                    & + li {
+                        margin-left: 50px;
+                    }
+                    list-style-type: none;
+                }
+            }
+            
+        }
+        &__button {
+            @include second-font;
+            a {
+                text-decoration: none;
+                color: white;
+                background: #C9453B;
+                border-radius: 5px;
+                padding: 14px 36px;
+            }
+        }
+    }
+    &-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        top: 50%;
+        width: 50%;
+
+        &__title, &__subtitle {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            @include first-font;
+            font-size: 65px;
+            line-height: 78px;
+        }
+        &__subtitle {
+            @include second-font;
+            font-size: 18px;
+            line-height: 29px;
+        }
+        &__button {
+            @include second-font;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                background: #C9453B;
+                border-radius: 5px;
+                padding: 14px 36px;
+            }
+        }
+
+    }
 }

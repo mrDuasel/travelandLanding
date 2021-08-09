@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap');
+
+
+
+@mixin logo-font {
+    font-family: 'Ribeye', cursive;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+@mixin first-font {
+    font-family: 'Gelasio', serif;
+}
+
+@mixin second-font {
+    font-family: 'Roboto', sans-serif;
+}

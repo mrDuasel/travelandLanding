@@ -1,5 +1,16 @@
-@import './includes/header/home.scss';
-@import './includes/header/location.scss';
-@import './includes/header/blog.scss';
-@import './includes/header/about.scss';
-@import './includes/header/contact.scss';
+@import './includes/normalize.scss';
+@import './includes/fonts.scss';
+@import './includes/home/home.scss';
+@import './includes/location/location.scss';
+@import './includes/blog/blog.scss';
+@import './includes/about/about.scss';
+@import './includes/contact/contact.scss';
+
+
+.wrapper {
+    padding-bottom: 140px;
+}
+.container {
+    width: 1460px;
+    margin: 0 auto;
+}
