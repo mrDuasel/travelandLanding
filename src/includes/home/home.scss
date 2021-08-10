@@ -80,7 +80,7 @@
         color: white;
         position: absolute;
         top: 50%;
-        width: 50%;
+        width: 70%;
 
         &__title, &__subtitle {
             margin-bottom: 30px;
@@ -95,6 +95,7 @@
             @include second-font;
             font-size: 18px;
             line-height: 29px;
+            width: 55%
         }
         &__button {
             @include second-font;
