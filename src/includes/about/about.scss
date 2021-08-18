@@ -1,0 +1,101 @@
+.about-content {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 50%;
+    &__title {
+        @include first-font;
+        font-size: 43px;
+        line-height: 60px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        @include second-font;
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 400;
+        opacity: 0.6;
+    }
+}
+
+.about-description {
+    display: flex;
+    justify-content: space-between;
+
+    &-main {
+        width: 555px;
+        &__img {
+            width: 555px;
+            height: 400px;
+            margin-bottom: 10px;
+        }
+
+        &__title,&__subtitle {
+            width: 65%;
+            margin-bottom: 10px;
+        }
+        &__title {
+            @include first-font;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+        &__subtitle {
+            @include second-font;
+            font-size: 18px;
+            line-height: 29px;
+            font-weight: 400;
+            opacity: 0.6;
+        }
+        &__dogs {
+            @include second-font;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+    }
+    &-other {
+        width: 555px;
+        &-item {
+            display: flex;  
+            &__img {
+                img {
+                width: 260px;
+                height: 200px;
+                }
+                margin-bottom: 10px;
+            }
+        
+            &-content {
+                display: flex;
+                flex-direction: column;
+                
+                
+                &__title,&__subtitle {
+                    width: 65%;
+                    margin-bottom: 10px;
+                }
+                &__title {
+                    @include first-font;
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 500;
+                }
+                &__subtitle {
+                    @include second-font;
+                    font-size: 18px;
+                    line-height: 29px;
+                    font-weight: 400;
+                    opacity: 0.6;
+                }
+                &__dogs {
+                    @include second-font;
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
