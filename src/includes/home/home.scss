@@ -63,19 +63,7 @@
             
         }
         &__button {
-            @include second-font;
-            a {
-                text-decoration: none;
-                color: white;
-                background: #C9453B;
-                border-radius: 5px;
-                padding: 14px 36px;
-                transition: 0.3s;
-                &:hover {
-                    background-color: white;
-                    color: black;
-                }
-            }
+         
         }
     }
     &-content {
@@ -103,15 +91,7 @@
             width: 55%
         }
         &__button {
-            @include second-font;
-            a {
-                display: inline-block;
-                text-decoration: none;
-                color: white;
-                background: #C9453B;
-                border-radius: 5px;
-                padding: 14px 36px;
-            }
+           
         }
 
     }
