@@ -32,7 +32,6 @@
         &__logo {
             @include logo-font;
             color: white;
-            text-align: center;
             flex-shrink: 1;
         }
         &__nav {
