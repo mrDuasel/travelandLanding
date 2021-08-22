@@ -1,0 +1,53 @@
+.contact-items {
+    display: flex;
+
+    &-social {
+
+        &__logo {
+            @include logo-font;
+                color: black;
+                margin-bottom: 40px;
+        }
+        &__title {
+            @include second-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            @include second-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px; 
+            margin-bottom: 20px;
+        }
+        &__networks {
+            display: flex;
+            a {
+                width: 20px;
+                height: 20px;
+                margin-right: 25px;
+            }
+        
+        }
+    }
+    &-links {
+        display: flex;
+
+        &__1, &__2 {
+            li {
+                list-style-type: none;
+                margin-bottom: 20px;
+            }
+            a {
+                text-decoration: none;
+                color:black;
+                @include second-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+}
