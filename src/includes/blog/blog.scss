@@ -19,6 +19,70 @@
     }
 }
 
+.name {
+  @include first-font;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.point { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.country {
+  @include second-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.6;
+}
+.rating {
+  @include second-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.mappoint {
+  display: flex;
+  img {
+    width: 15px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}
+.star {
+  display: flex;
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}
+.days {
+  @include second-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+}
+.coast {
+  .prefix{
+    @include second-font;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .postfix {
+  @include second-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+  }
+}
+
 // SLIDEER
 img {
     width: 100%; 
@@ -30,6 +94,7 @@ img {
     margin: 20px auto;
     padding: 30px 50px;
     background-color: white;
+    height: 300px;
   }
   
   /* General styles */
@@ -46,6 +111,7 @@ img {
   
   .sim-slider-element {
     width: 100%;
+    max-width: 100%;
     transition: opacity 1s ease-in;
     opacity: 0;
     position: absolute;
