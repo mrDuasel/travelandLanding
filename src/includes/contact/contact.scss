@@ -1,6 +1,11 @@
+.contact {
+    background: rgba(38, 148, 153, 0.04);
+    padding: 70px 0px;
+
+}
 .contact-items {
     display: flex;
-
+    justify-content: space-between;
     &-social {
 
         &__logo {
@@ -35,7 +40,15 @@
     &-links {
         display: flex;
 
+        &__1 {
+            margin-right: 120px;
+        }
+
         &__1, &__2 {
+           ul{
+               padding: 0;
+               margin: 0;
+           }
             li {
                 list-style-type: none;
                 margin-bottom: 20px;
@@ -49,5 +62,38 @@
                 line-height: 24px;
             }
         }
+    }
+    &-subscribe {
+        &__title {
+            margin: 0;
+            padding: 0;
+            @include second-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 45px;
+        }
+        &__form {
+            input {
+                @include second-font;
+                color: black;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                padding: 14px 36px;
+                margin-right: 35px;
+                cursor: pointer;
+                border: 1px solid rgba(255, 0, 0, 0.1);
+                box-sizing: border-box;
+                box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+                border-radius: 5px;
+                transition: 0.1s;
+                &:hover {
+                    border: 1px solid black;
+                }
+            }
+            
+        }
+
     }
 }
