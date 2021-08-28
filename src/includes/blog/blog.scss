@@ -124,8 +124,8 @@ img {
   /* Navigation item styles */
   div.sim-slider-arrow-left,
   div.sim-slider-arrow-right {
-    width: 22px;
-    height: 40px;
+    width: 20px;
+    height: 15px;
     position: absolute;
     cursor: pointer;
     opacity: 0.6;
@@ -134,16 +134,16 @@ img {
   
   div.sim-slider-arrow-left {
     left: 10px;
-    top: 40%;
+    top: 95%;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+    background: url('assets/img/slaidericons/leftarrow.png') no-repeat;
   }
   
   div.sim-slider-arrow-right {
-    right: 10px;
-    top: 40%;
+    right: 1px;
+    top: 95%;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+    background: url('assets/img/slaidericons/rightarrow.png') no-repeat;
   }
   
   div.sim-slider-arrow-left:hover {
@@ -159,18 +159,17 @@ img {
     height: auto;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5px;
     z-index: 3;
     text-align: center;
   }
   
   span.sim-dot {
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
+    width: 50px;
+    height: 5px;
+    margin: 0px 7px;
     padding: 0;
     display: inline-block;
-    background-color: #BBB;
     border-radius: 5px;
     cursor: pointer;
   }
