@@ -29,6 +29,7 @@
         padding-top: 42px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &__logo {
             @include logo-font;
             color: white;
