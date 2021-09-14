@@ -26,8 +26,7 @@
     &-main {
         width: 555px;
         &__img {
-            width: 555px;
-            height: 400px;
+            width: 100%;
             margin-bottom: 35px;
         }
 
@@ -60,17 +59,23 @@
         width: 555px;
         &-item {
             display: flex;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
             &__img {
-                img {
-                width: 260px;
-                height: 200px;
-                }
-                margin-bottom: 30px;
+                width: 100%;
                 margin-right: 27px;
+                img {
+                    max-width: 260px;
+                    height: 100%;
+                }
             }
         
             &-content {
-                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                             
                 &__title,&__subtitle {
                     margin-bottom: 10px;
