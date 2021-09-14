@@ -1,3 +1,6 @@
 import "./index.pug";
 import "./style.scss";
-import "./includes/blog/blog.js"
+import "./includes/home/home.js";
+import "./includes/blog/blog.js";
+
+
