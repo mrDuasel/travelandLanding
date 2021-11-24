@@ -12,6 +12,10 @@
             @include logo-font;
                 color: black;
                 margin-bottom: 40px;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
         }
         &__title {
             @include second-font;
